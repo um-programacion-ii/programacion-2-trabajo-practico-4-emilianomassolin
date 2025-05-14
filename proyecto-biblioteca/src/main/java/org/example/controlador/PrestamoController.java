@@ -33,5 +33,5 @@ public class PrestamoController {
     @DeleteMapping("/{id}")
     public void eliminar(@PathVariable Long id) {
         prestamoService.eliminar(id);
-
+    }
 }
