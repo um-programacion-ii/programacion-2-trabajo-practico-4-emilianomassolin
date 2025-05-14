@@ -11,6 +11,7 @@
 /home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/org/example/modelo/Prestamo.java
 /home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/org/example/repositorio/PrestamoRepository.java
 /home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/org/example/servicio/LibroService.java
+/home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/com/biblioteca/Tp4BibliotecaApplication.java
 /home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/org/example/repositorio/LibroRepository.java
 /home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/org/example/modelo/Libro.java
 /home/thinkpademi/IdeaProjects/programacion-2-trabajo-practico-4-emilianomassolin/proyecto-biblioteca/src/main/java/org/example/excepciones/GlobalExceptionHandler.java

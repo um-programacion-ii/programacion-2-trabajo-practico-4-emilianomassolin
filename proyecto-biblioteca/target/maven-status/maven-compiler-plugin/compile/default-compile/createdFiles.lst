@@ -18,6 +18,7 @@ org/example/servicio/impl/LibroServiceImpl.class
 org/example/repositorio/UsuarioRepository.class
 org/example/servicio/PrestamoService.class
 org/example/excepciones/PrestamoNoEncontradoException.class
+com/biblioteca/Tp4BibliotecaApplication.class
 org/example/servicio/UsuarioService.class
 org/example/excepciones/GlobalExceptionHandler.class
 org/example/repositorio/impl/LibroRepositoryImpl.class
