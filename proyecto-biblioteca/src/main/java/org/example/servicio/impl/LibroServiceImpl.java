@@ -45,4 +45,9 @@ public class LibroServiceImpl implements LibroService {
         libro.setId(id);
         return libroRepository.save(libro);
     }
+
+    @Override
+    public Libro buscarPorId(Long id) {
+        return null;
+    }
 }
