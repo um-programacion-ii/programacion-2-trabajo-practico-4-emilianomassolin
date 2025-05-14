@@ -1,5 +1,6 @@
 package org.example.servicio.impl;
 
+import org.example.excepciones.PrestamoNoEncontradoException;
 import org.example.modelo.Prestamo;
 import org.example.repositorio.PrestamoRepository;
 import org.example.servicio.PrestamoService;
@@ -34,6 +35,6 @@ public class PrestamoServiceImpl implements PrestamoService {
     @Override
     public Prestamo buscarPorId(Long id) {
         return prestamoRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Préstamo no encontrado con ID: " + id));
+                .orElseThrow(() -> new PrestamoNoEncontradoException(id));
     }
 }
