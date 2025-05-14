@@ -21,7 +21,7 @@ public class LibroController {
     }
 
     @GetMapping("/{id}")
-    public Libro obtenerPorIsbn(@PathVariable Long id) {
+    public Libro buscarPorId(@PathVariable Long id) {
         return libroService.buscarPorId(id);
     }
 

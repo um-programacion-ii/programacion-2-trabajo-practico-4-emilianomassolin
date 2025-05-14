@@ -1,5 +1,6 @@
 package org.example.servicio.impl;
 
+import org.example.excepciones.UsuarioNoEncontradoException;
 import org.example.modelo.Usuario;
 import org.example.repositorio.UsuarioRepository;
 import org.example.servicio.UsuarioService;
@@ -19,7 +20,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     @Override
     public Usuario buscarPorEmail(String email) {
         return usuarioRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con email: " + email));
+                .orElseThrow(() -> new UsuarioNoEncontradoException("Usuario no encontrado con email: " + email));
     }
 
     @Override
@@ -40,7 +41,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     @Override
     public Usuario actualizar(Long id, Usuario usuario) {
         if (!usuarioRepository.existsById(id)) {
-            throw new RuntimeException("Usuario no encontrado con ID: " + id);
+            throw new UsuarioNoEncontradoException("Usuario no encontrado con ID: " + id);
         }
         usuario.setId(id);
         return usuarioRepository.save(usuario);
